@@ -1,8 +1,6 @@
 package com.xxl.job.core.biz;
 
-import com.xxl.job.core.biz.model.HandleCallbackParam;
-import com.xxl.job.core.biz.model.RegistryParam;
-import com.xxl.job.core.biz.model.ReturnT;
+import com.xxl.job.core.biz.model.*;
 
 import java.util.List;
 
@@ -44,5 +42,29 @@ public interface AdminBiz {
 
     // ---------------------- biz (custome) ----------------------
     // group、job ... manage
+
+    public ReturnT<String> addJob(XxlJobInfo jobInfo);
+
+    public ReturnT<String> addJobByKey(XxlJobInfoParam jobInfo);
+
+    public ReturnT<String> updateJob(XxlJobInfo jobInfo);
+
+    public ReturnT<String> updateJobByKey(XxlJobInfoParam jobInfo);
+
+    public ReturnT<String> removeJob(int id);
+
+    public ReturnT<String> removeJobByKey(XxlJobKey key);
+
+    public ReturnT<String> pauseJob(int id);
+
+    public ReturnT<String> pauseJobByKey(XxlJobKey key);
+
+    public ReturnT<String> startJob(int id);
+
+    public ReturnT<String> startJobByKey(XxlJobKey key);
+
+    public ReturnT<String> addAndStartJob(XxlJobInfo jobInfo);
+
+    public ReturnT<String> addAndStartJobByKey(XxlJobInfoParam jobInfo);
 
 }

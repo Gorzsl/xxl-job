@@ -1,4 +1,4 @@
-package com.xxl.job.admin.core.exception;
+package com.xxl.job.core.exception;
 
 /**
  * @author xuxueli 2019-05-04 23:19:29

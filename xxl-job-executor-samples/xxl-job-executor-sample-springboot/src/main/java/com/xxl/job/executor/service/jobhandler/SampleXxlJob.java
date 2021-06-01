@@ -250,4 +250,15 @@ public class SampleXxlJob {
     }
 
 
+    /**
+     * 输出任务参数的任务
+     * @throws Exception
+     */
+    @XxlJob("printParamJobHandler")
+    public void printParamJobHandler() throws Exception {
+        String param = XxlJobHelper.getJobParam();
+        XxlJobHelper.log("参数：{}", param);
+    }
+
+
 }
